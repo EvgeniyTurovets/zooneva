@@ -54,7 +54,7 @@ $(function(){
 		$(this).toggleClass('wish_added')
 	})
 
-
+	//сайдбар на фомильном
 	$('.sidebar1 .title').click(function(){
 		$(this).next('.sidebarnav').slideToggle()
 	})
@@ -62,6 +62,8 @@ $(function(){
 		$(this).next('.sidebarnav').slideToggle()
 	})
 
+	$('input[type="tel"]').mask("+7 999 999 9999"); 
+	//футер акордеон
 	$('.footer-block h3').click(function(){
 		if($(this).hasClass('active')){
 			$(this).removeClass('active')
@@ -72,4 +74,32 @@ $(function(){
 		}
 	})
 
+	//модалка
+	$('.modal-btn').click(function(){
+		let dataModal = $(this).attr('data-modal')
+		$('#'+ dataModal +'').fadeIn()
+	})
+
+	$('.close-btn').click(function(){
+		$('.modal').fadeOut()
+	})
+	$('.politica-btn').click(function(){
+		$('.politica').fadeIn()
+		return false;
+	})
+	$('.politica .modal-close').click(function(){
+		$('.politica').fadeOut()
+	})
+	$('.modal__wrap__back').submit(function(){
+		event.preventDefault();
+		$('.modal-submite').fadeIn()
+	})
+
+	$('.modal').mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".modal-body"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.modal').fadeOut()
+		}
+	});
 })

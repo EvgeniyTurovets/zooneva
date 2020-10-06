@@ -1967,4 +1967,15 @@ a.callmefot:hover {
     -ms-flex-align: center;
         align-items: center; }
   a.callmefot {
-    width: 250px; } }
+    width: 250px; }
+  .footer__logo__wrap {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .social-links li {
+    height: 20px; }
+  .footer-logo {
+    margin-bottom: 35px; }
+  .social-links {
+    width: 100%; } }

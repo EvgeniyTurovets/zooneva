@@ -2166,4 +2166,19 @@ a.callmefot:hover{
     a.callmefot{
         width: 250px;
     }
+
+    .footer__logo__wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-links li{
+        height: 20px;
+    }
+    .footer-logo{
+        margin-bottom: 35px;
+    }
+
+    .social-links{
+        width: 100%;
+    }
 }

@@ -823,6 +823,8 @@ a.callme {
     background: url(../img/search.png) no-repeat; }
   .basket {
     background: #b56dba url(../img/korz.png) no-repeat 50%; }
+  .navigation .dog {
+    border-radius: 0; }
   .search_mob .sear {
     position: absolute;
     top: 63px;

@@ -49,7 +49,7 @@ $(function(){
 		$(this).addClass('active')
 	})
 
-	//
+	//лайк на товаре
 	$('.like').click(function(){
 		$(this).toggleClass('wish_added')
 	})
@@ -63,6 +63,8 @@ $(function(){
 	})
 
 	$('input[type="tel"]').mask("+7 999 999 9999"); 
+
+
 	//футер акордеон
 	$('.footer-block h3').click(function(){
 		if($(this).hasClass('active')){
@@ -81,6 +83,7 @@ $(function(){
 	})
 
 	$('.close-btn').click(function(){
+		event.preventDefault()
 		$('.modal').fadeOut()
 	})
 	$('.politica-btn').click(function(){
@@ -102,4 +105,33 @@ $(function(){
 			$('.modal').fadeOut()
 		}
 	});
+
+
+	//фиксированое меню при скроле
+	let navigationWidth = $('.navigation').width();
+	console.log(navigationWidth);
+	yes = $(".slider").offset().top + 18;
+	$(document).scroll(function () {
+		if($(window).width() > 1025){
+			s_top = $(window).scrollTop();
+		    if(s_top > yes){
+		        $('.navigation').addClass('fix-menu')
+		        console.log($('.navigation').offset());
+		        $('.header__right').addClass('fix-menu')
+		        
+		    }
+		    else{
+		    	$('.navigation').removeClass('fix-menu')
+		    	$('.header__right').removeClass('fix-menu')
+		    }
+		}
+	    
+	});
+
+
+	$('.buytovar-btn').click(function(){
+		event.preventDefault()
+
+		$('#buytovar').fadeIn()
+	})
 })

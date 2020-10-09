@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0">
+    <link rel='stylesheet' type='text/css' media='screen' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
+</head>
+<body>
+<div class="mobile_menu">
+    <a href="#menu" class="menu-link"><span class="drawer-hamburger-icon"></span></a>
+    <a href="/wish_list/" class="favor2"></a>
+    <a href="/" class="logo_mob"></a>
+    
+    <div class="search_mob">
+        <div class="sear" style="display: none;">
+            <form action="/search/index.php" class="search2">
+
+
+                <input type="search" placeholder="Поиск по сайту" name="q" value="">            <input name="s" type="hidden" value="Поиск">
+                <input name="ss" type="submit" value="">
+            </form>
+        </div>
+    </div>
+    <a href="#" class="basket"></a>
+</div>
+<nav id="menu" class="panel active_menu" role="navigation">
+    <div class="mainmenu">
+   
+    <ul class="lc">
+      <li class="autor"><a href="#">Авторизация</a></li>    
+    </ul>
+    
+    <ul class="navigation">
+      <li><a href="/catalog/sobaki/" class="dog">Собаки</a></li>
+        
+      <li><a href="/catalog/koshki/" class="cat">Кошки</a></li>
+
+      <li><a href="/catalog/gryzuny-khorki/" class="rat">Грызуны, хорьки</a></li>
+
+      <li><a href="/catalog/ptitsy/" class="bird">Птицы</a></li>
+
+      <li><a href="/catalog/rybki/" class="fish">Рыбки</a></li>
+
+      <li><a href="/sale/" class="sail">Распродажа</a></li>
+
+      <li><a href="/news/aktsii/" class="akc">Акции</a></li>
+        
+    </ul>
+  
+    <a class="number" href="tel:88005550050">8 800 555 00 50</a>
+
+    <div class="favorite">
+        <p style="color: #77c23e;margin-top: 8px;">Принимаем заказы</p>
+        <p style="color: #f9921c;font-size: 22px;">круглосуточно!</p>
+    </div>        
+  </div>
+</nav>
+<div class="top">
+    <div class="container">
+         <div class="top-nav">
+            <ul class="navbar">
+                <li class="dost">
+                    <a href="#" class="home">
+                        Главная        </a>
+                </li>
+                <li class="dost">
+                    <a href="#" class="shop">
+                        Магазины        </a>
+                </li>               
+                <li class="dost">
+                    <a href="#" class="dost" style="margin-left: 10px;">
+                        Доставка        </a>
+                </li>               
+                <li class="dost">
+                    <a href="#" class="opla" style="margin-left: 3px;">
+                        Оплата        </a>
+                </li>              
+                <li class="dost">
+                    <a href="#" class="cont" style="margin-left: 2px;">
+                        Контакты        </a>
+                </li>              
+                <li class="dost">
+                    <a href="#" class="priu" style="margin-left: 6px;">
+                        Приют        </a>
+                </li>             
+            </ul>
+            <ul class="lc">
+                <li class="autor"><a href="#">Регистрация</a></li>
+                <li class="in"><a href="#">Войти</a></li> 
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="main container">
+    <div class="header">
+        <div class="logo">
+            <a href="#"><img src="./img/logo.png" alt=""></a>
+            <p>
+                Интернет-магазин зоотоваров
+            </p>        
+        </div>
+
+        <div class="search">
+            <form action="/catalog/" class="search2">
+                <input type="search" placeholder="Корм для собак" name="q" value="">           <input name="s" type="hidden" value="Поиск">
+                <input name="ss" type="submit" value="">
+            </form>
+            <p>Например, <a href="">корм для собак</a></p>
+        </div>
+
+        <div class="phone">
+            <a href="" class="number">
+                 8 800 555 00 50
+            </a>
+            <a href="" class="number">
+                 8 911 243 25 66
+            </a>
+            <p class="number2">
+                 можем<br>
+                 перезвонить
+            </p>            
+            <a data-href="/local/ajax/order_call.php" href="javascript:void(0)" class="callme popup-ajax modal-btn" data-modal="backcall">Заказать звонок</a>
+        </div>
+
+        <div class="header__right">
+          <div class="header__right__wrap">
+            <a href="" class="header__right__item">
+                <img src="./img/zakazi.png">
+                <div>Заказы</div>
+            </a>
+            <a href="" class="header__right__item">
+                <img src="./img/izbranoe.png">
+                <span style="background-color: #77c23e;">0</span>
+                <div>Избраное</div>
+            </a>
+            <a href="" class="header__right__item">
+                <img src="./img/korzina.png">
+                <span style="background-color: #f9921c;">22</span>
+                <div>Корзина</div>
+            </a>
+          </div>
+            
+        </div>
+    </div>
+    <div class="slider">
+      <div class="container">
+        <div class="row">
+            <ul class="navigation">
+             <li>
+                <a href="/catalog/sobaki/" class="root-item dog">Собаки</a>
+                <ul class="navigationdown">
+                   <li>
+                      <a href="/catalog/sobaki/sukhie-korma/" class="parent">Сухие<br>корма</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/sukhie-korma/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/shchenki/">Щенки</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/vzroslye-1-6-let/">Взрослые (1-6 лет)</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/pozhilye/">Пожилые</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/dieticheskoe-pitanie/">Диетическое питание</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-1st_choice/apply/">1st Choice</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-8_v_1/apply/">8 в 1</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-chappi/apply/">Chappi</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-dog_chow/apply/">Dog Chow</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-eukanuba/apply/">Eukanuba</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-grandorf/apply/">Grandorf</a></li>
+                               <li><a href="/catalog/sobaki/sukhie-korma/filter/brand-is-hill_s_science_plan/apply/">Hill's </a></li>
+                               <a href="/catalog/sobaki/lakomstva/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/konservy/" class="parent">Консервы</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/konservy/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/konservy/pauchi/">Паучи</a></li>
+                               <li><a href="/catalog/sobaki/konservy/lamister/">Ламистер</a></li>
+                               <li><a href="/catalog/sobaki/konservy/banka/">Банка</a></li>
+                               <li><a href="/catalog/sobaki/konservy/tetra-pak/">Tetra Pak</a></li>
+                               <li><a href="/catalog/sobaki/konservy/dieticheskoe-pitanie/">Диетическое питание</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-cesar/apply/">Cesar</a></li>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-chappi/apply/">Chappi</a></li>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-clan/apply/">Clan</a></li>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-eukanuba/apply/">Eukanuba</a></li>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-grandorf/apply/">Grandorf</a></li>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-hill_s_science_plan/apply/">Hill's </a></li>
+                               <li><a href="/catalog/sobaki/konservy/filter/brand-is-meradog/apply/">Meradog</a></li>
+                                <a href="/catalog/sobaki/lakomstva/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/lakomstva/" class="parent">Лакомства</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/lakomstva/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/tetra-pak/">Печенье, снеки</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/banka/">Зубочистики</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/lamister/">Сушеное мясо</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/kolbasa-sosiski/">Колбаса, сосиски</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/kostochki-palochki-pletenki/">Косточки, палочки</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/khrustiki/">Хрустики</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/sobaki/lakomstva/filter/brand-is-meradog/apply/">Meradog</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/filter/brand-is-pedigree/apply/">Pedigree</a></li>
+                               <li><a href="/catalog/sobaki/lakomstva/filter/brand-is-purina_pro_plan/apply/">Purina Pro Plan</a></li>
+                               <a href="/catalog/sobaki/lakomstva/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/veterinarnaya-apteka/" class="parent">Ветеринарная<br>аптека</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/apteka2/">Здоровье глаз и ушей</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/ukhod-za-kozhey/">Уход за кожей</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/zabota-o-pecheni/">Забота о печени</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/ukhod-za-polostyu-rta/">Уход за полостью рта</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/zashchita-ot-blokh-i-kleshchey/">Защита от блох и клещей</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/zashchita-ot-glistov/">Защита от глистов</a></li>
+                               <li><a href="/catalog/sobaki/veterinarnaya-apteka/zashchita-ot-stressa/">Защита от стресса</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/veterinarnaya-apteka/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/vitaminy-pishch-dobavki/" class="parent">Витамины,<br>пищ. добавки</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/vitaminy-pishch-dobavki/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/vitaminy-pishch-dobavki/vitaminy1/">Красота кожи и шерсти</a></li>
+                               <li><a href="/catalog/sobaki/vitaminy-pishch-dobavki/vitaminy2/">Здоровье костей и суставов</a></li>
+                               <li><a href="/catalog/sobaki/vitaminy-pishch-dobavki/vitaminy3/">Витамины для иммунитита</a></li>
+                               <li><a href="/catalog/sobaki/vitaminy-pishch-dobavki/vitaminy4/">Пребиотики</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/vitaminy-pishch-dobavki/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/gigiena-pilenki/" class="parent">Гигиена,<br>пеленки</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena1/">Уборка помещения</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena2/">Пеленки, подгузники</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena3/">Средства приучения</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena4/">Гигиена глаз и ушей</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena-kozhi-i-shersti/">Гигиена кожи и шерсти</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena-lap/">Гигиена лап</a></li>
+                               <li><a href="/catalog/sobaki/gigiena-pilenki/gigiena-zubov/">Гигиена зубов</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/gigiena-pilenki/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/gruming-kosmetika/" class="parent">Груминг,<br>косметика</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/gruming1/">Украшения</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/gruming2/">Колтунорез</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/gruming5/">Крема</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/gruming-sprey/">Груминг-спрей</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/kogterezy/">Когтерезы</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/rascheski/">Расчески</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/trimming-furminator/">Тримминг, фурминатор</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/shampuni/">Шампуни</a></li>
+                               <li><a href="/catalog/sobaki/gruming-kosmetika/shchetki/">Щетки</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/gruming-kosmetika/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/igrushki/" class="parent">Игрушки</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/igrushki/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/igrushki1/">Веревки, канаты</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/igrushki2/">Летающие тарелки</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/igrushki3/">Гантели</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/zhivotnye/">Животные</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/koltso/">Кольцо</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/kostochki-palki/">Косточки, палки</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/myagkie-igrushki/">Мягкие игрушки</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/myachi/">Мячи</a></li>
+                               <li><a href="/catalog/sobaki/igrushki/raznye/">Разные</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/igrushki/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/transportirovka-perenoski/" class="parent">Переноски</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/transportirovka-perenoski/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/transportirovka-perenoski/volery-kletki/">Вольеры, клетки</a></li>
+                               <li><a href="/catalog/sobaki/transportirovka-perenoski/dlya-aviapereletov/">Для авиаперелетов</a></li>
+                               <li><a href="/catalog/sobaki/transportirovka-perenoski/perenoski/">Переноски</a></li>
+                               <li><a href="/catalog/sobaki/transportirovka-perenoski/sumki-ryukzaki/">Сумки, рюкзаки</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/transportirovka-perenoski/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/sobaki/lezhaki/" class="parent">Лежаки</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/sobaki/lezhaki/">Все товары</a></li>
+                               <li><a href="/catalog/sobaki/lezhaki/domiki/">Домики</a></li>
+                               <li><a href="/catalog/sobaki/lezhaki/kovriki/">Коврики</a></li>
+                               <li><a href="/catalog/sobaki/lezhaki/lezhaki/">Лежаки</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/sobaki/lezhaki/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+             <li>
+                <a href="/catalog/koshki/" class="root-item cat">Кошки</a>
+                <ul class="navigationdown">
+                   <li>
+                      <a href="/catalog/koshki/sukhie-korma/" class="parent">Сухие<br>корма</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/sukhie-korma/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/kotyata-i-beremennye-koshki/">Котята и беременные кошки</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/vzroslye/">Взрослые</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/pozhilye/">Пожилые</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/dieticheskoe-pitanie/">Диетическое питание</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-1st_choice/apply/">1st Choice</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-cat_chow/apply/">Cat Chow</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-darling/apply/">Darling</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-eukanuba/apply/">Eukanuba</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-friskies/apply/">Friskies</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-grandorf/apply/">Grandorf</a></li>
+                               <li><a href="/catalog/koshki/sukhie-korma/filter/brand-is-hill_s_science_plan/apply/">Hill's </a></li>
+                               <a href="/catalog/koshki/sukhie-korma/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/konservy/" class="parent">Консервы</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/konservy/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/konservy/tetra-pak/">Tetra Pak</a></li>
+                               <li><a href="/catalog/koshki/konservy/banka/">Банка</a></li>
+                               <li><a href="/catalog/koshki/konservy/lamister/">Ламистер</a></li>
+                               <li><a href="/catalog/koshki/konservy/pauchi/">Паучи</a></li>
+                               <li><a href="/catalog/koshki/konservy/dieticheskoe-pitanie/">Диетическое питание</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-clan/apply/">Clan</a></li>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-eukanuba/apply/">Eukanuba</a></li>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-felix/apply/">Felix</a></li>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-friskies/apply/">Friskies</a></li>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-gourmet/apply/">Gourmet</a></li>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-grandorf/apply/">Grandorf</a></li>
+                               <li><a href="/catalog/koshki/konservy/filter/brand-is-hill_s_science_plan/apply/">Hill's </a></li>
+                               <a href="/catalog/koshki/konservy/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/napolniteli/" class="parent">Наполнители</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/napolniteli/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/napolniteli/vpityvayushchie/">Впитывающие</a></li>
+                               <li><a href="/catalog/koshki/napolniteli/drevesnye/">Древесные</a></li>
+                               <li><a href="/catalog/koshki/napolniteli/komkuyushchiesya/">Комкующиеся</a></li>
+                               <li><a href="/catalog/koshki/napolniteli/b5b5/">Силикогелевые</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/koshki/napolniteli/filter/brand-is-catsan/apply/">Catsan</a></li>
+                               <a href="/catalog/koshki/napolniteli/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/veterenarnaya-apteka/" class="parent">Ветеринарная<br>аптека</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/aptkosh2/">Здоровье глаз и ушей</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/ukhod-za-kozhey/">Уход за кожей</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/zabota-o-pecheni/">Забота о печени</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/ukhod-za-polostyu-rta/">Уход за полостью рта</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/zashchita-ot-blokh-i-kleshchey/">Защита от блох и клещей</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/zashchita-ot-glistov/">Защита от глистов</a></li>
+                               <li><a href="/catalog/koshki/veterenarnaya-apteka/zashchita-ot-stressa/">Защита от стресса</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/koshki/veterenarnaya-apteka/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/vitaminy-lakomstva/" class="parent">Витамины,<br>лакомства</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/krasota-kozhi-i-shersti/">Красота кожи и шерсти</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/lakomstva-dlya-vyvoda-shersti/">Лакомства для вывода шерсти</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/lakomstva-s-koshachey-myatoy/">Лакомства с кошачьей мятой</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/lakomstva-sneki/">Лакомства, снеки</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/filter/brand-is-dreamies/apply/">Dreamies</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/filter/brand-is-felix/apply/">Felix</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/filter/brand-is-meradog/apply/">Meradog</a></li>
+                               <li><a href="/catalog/koshki/vitaminy-lakomstva/filter/brand-is-tomi/apply/">TOMI</a></li>
+                               <a href="/catalog/koshki/vitaminy-lakomstva/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/gigiena/" class="parent">Гигиена</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/gigiena/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/gigiena/antitsarapki/">Антицарапки</a></li>
+                               <li><a href="/catalog/koshki/gigiena/gigiena-glaz-i-ushey/">Гигиена глаз и ушей</a></li>
+                               <li><a href="/catalog/koshki/gigiena/uborka-pomeshcheniya/">Уборка помещения</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/koshki/gigiena/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/gruming/" class="parent">Груминг,<br>косметика</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/gruming/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/gruming/gruming-sprey/">Груминг-спрей</a></li>
+                               <li><a href="/catalog/koshki/gruming/kogterezy/">Когтерезы</a></li>
+                               <li><a href="/catalog/koshki/gruming/koltunorez/">Колтунорез</a></li>
+                               <li><a href="/catalog/koshki/gruming/krema/">Крема</a></li>
+                               <li><a href="/catalog/koshki/gruming/rascheski/">Расчески</a></li>
+                               <li><a href="/catalog/koshki/gruming/trimming-furminator/">Тримминг, фурминатор</a></li>
+                               <li><a href="/catalog/koshki/gruming/ukrasheniya/">Украшения</a></li>
+                               <li><a href="/catalog/koshki/gruming/shampuni/">Шампуни</a></li>
+                               <li><a href="/catalog/koshki/gruming/shchetki/">Щетки</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/koshki/gruming/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/igrushki/" class="parent">Игрушки</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/igrushki/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/igrushki/zhivotnye/">Животные</a></li>
+                               <li><a href="/catalog/koshki/igrushki/interaktivnye/">Интерактивные</a></li>
+                               <li><a href="/catalog/koshki/igrushki/myshki/">Мышки</a></li>
+                               <li><a href="/catalog/koshki/igrushki/myachi/">Мячи</a></li>
+                               <li><a href="/catalog/koshki/igrushki/udochki-draznilki/">Удочки-дразнилки</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/koshki/igrushki/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/petenoski/" class="parent">Переноски</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/petenoski/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/petenoski/aksessuary/">Аксессуары</a></li>
+                               <li><a href="/catalog/koshki/petenoski/volery-kletki/">Вольеры, клетки</a></li>
+                               <li><a href="/catalog/koshki/petenoski/dlya-aviapereleta/">Для авиаперелета</a></li>
+                               <li><a href="/catalog/koshki/petenoski/perenoski/">Переноски</a></li>
+                               <a class="vserasdeli" href="/catalog/sobaki/sukhie-korma/">Все разделы</a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/koshki/petenoski/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                   <li>
+                      <a href="/catalog/koshki/domiki/" class="parent">Домики,<br>когтеточки</a>
+                      <ul class="nvgshn">
+                         <div class="mnu1">
+                            <ul>
+                               <h4>Разделы</h4>
+                               <li><a href="/catalog/koshki/domiki/">Все товары</a></li>
+                               <li><a href="/catalog/koshki/domiki/domik-kogtetochka/">Домик-когтеточка</a></li>
+                               <li><a href="/catalog/koshki/domiki/domik-lezhanka/">Домик-лежанка</a></li>
+                               <li><a href="/catalog/koshki/domiki/kogtetochka/">Когтеточка</a></li>
+                               <li><a href="/catalog/koshki/domiki/lezhanka/">Лежанка</a></li>
+                               <li><a href="/catalog/koshki/miski-konteynery/avtomaticheskie-kormushki/">Автоматические кормушки</a></li>
+                               <li><a href="/catalog/koshki/miski-konteynery/aksessuary-dlya-khraneniya/">Аксессуары для хранения</a></li>
+                               <li><a href="/catalog/koshki/miski-konteynery/kovrik-pod-misku/">Коврик под миску</a></li>
+                               <li><a href="/catalog/koshki/miski-konteynery/miski-keramicheskie/">Миски керамические</a></li>
+                               <li><a href="/catalog/koshki/miski-konteynery/miski-teleskopy/">Миски-телескопы</a></li>
+                               <li><a href="/catalog/koshki/miski-konteynery/poilki-butylki/">Поилки-бутылки</a></li>
+                               <li><a href="/catalog/koshki/osheyniki-shleyki/osheyniki/">Ошейники</a></li>
+                               <li><a href="/catalog/koshki/osheyniki-shleyki/povodki/">Поводки</a></li>
+                               <li><a href="/catalog/koshki/osheyniki-shleyki/shleyki/">Шлейки</a></li>
+                               <a href="/catalog/koshki/domiki/"></a>
+                            </ul>
+                         </div>
+                         <div class="mnu2">
+                            <ul>
+                               <h4>Производители</h4>
+                               <a href="/catalog/koshki/domiki/">Все бренды</a>
+                            </ul>
+                         </div>
+                      </ul>
+                   </li>
+                </ul>
+             </li>
+             <li>
+                <a href="/catalog/gryzuny-khorki/" class="root-item rat">Грызуны, хорьки</a>
+                <ul class="navigationdown">
+                   <li><a href="/catalog/gryzuny-khorki/sukhoy-korm/">Сухой<br>корм</a></li>
+                   <li><a href="/catalog/gryzuny-khorki/gigiena-kosmetika-lakomstva/">Гигиена,<br>косметика</a></li>
+                   <li><a href="/catalog/gryzuny-khorki/lakomstva/">Лакомства</a></li>
+                   <li><a href="/catalog/gryzuny-khorki/kletki-perenoski/">Клетки,<br>переноски,кормушки</a></li>
+                   <li><a href="/catalog/gryzuny-khorki/napolniteli-seno-opilki/">Наполнители,<br>сено, опилки</a></li>
+                   <li><a href="/catalog/gryzuny-khorki/igrushki/">Игрушки</a></li>
+                </ul>
+             </li>
+             <li>
+                <a href="/catalog/ptitsy/" class="root-item bird">Птицы</a>
+                <ul class="navigationdown">
+                   <li><a href="/catalog/ptitsy/sukhoy-korm/">Сухой<br>корм</a></li>
+                   <li><a href="/catalog/ptitsy/lakomstva/">Лакомства</a></li>
+                   <li><a href="/catalog/ptitsy/vitaminy/">Витамины</a></li>
+                   <li><a href="/catalog/ptitsy/gigiena/">Гигиена</a></li>
+                   <li><a href="/catalog/ptitsy/kletki/">Клетки</a></li>
+                   <li><a href="/catalog/ptitsy/igrushki/">Игрушки</a></li>
+                </ul>
+             </li>
+             <li>
+                <a href="/catalog/rybki/" class="root-item fish">Рыбки</a>
+                <ul class="navigationdown">
+                   <li><a href="/catalog/rybki/korma/">Корма</a></li>
+                   <li><a href="/catalog/rybki/akvariumy/">Аквариумы</a></li>
+                   <li><a href="/catalog/rybki/oborudovanie/">Оборудование</a></li>
+                   <li><a href="/catalog/rybki/preparaty-i-vitaminy/">Препараты<br>и витамины</a></li>
+                   <li><a href="/catalog/rybki/aksessuary/">Аксессуары</a></li>
+                </ul>
+             </li>
+             <li><a href="/sale/" class="root-item sail">Распродажа</a></li>
+             <li><a href="/news/aktsii/" class="root-item akc">Акции</a></li>
+          </ul>
+
+          
+        </div>
+      
+      </div>
+      <div class="flexslider">
+          <div class="slides">
+            <div class="slider-image" style="background-image:url(./img/slider/slide1.png);">
+                <a class="slider-link" href="#">
+                    <span class="slider-btn" >
+                        <span style="background-color: #b75e58">Подробнее об акции</span>
+                    </span> 
+                </a>
+            </div>
+            <div class="slider-image" style="background-image:url(./img/slider/slide2.png);">
+                <a class="slider-link" href="#">
+                    <span class="slider-btn" >
+                        <span style="background-color: #9a247a">Подробнее об акции</span>
+                    </span> 
+                </a>
+            </div>
+          </div>
+        </div>
+    </div>

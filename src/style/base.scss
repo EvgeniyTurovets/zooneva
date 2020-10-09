@@ -13,6 +13,12 @@
 	src: url(../fonts/MuseoSansCyrl-700.woff); /* Путь к файлу со шрифтом */
 	font-weight: 700;
 }
+@font-face {
+    font-family: 'PH'; /* Имя шрифта */
+    src: url(../fonts/PH-600.otf); /* Путь к файлу со шрифтом */
+    font-weight: 600;
+}
+
 @media (min-width: 1200px){
     .container {
         max-width: 1170px;
@@ -29,6 +35,8 @@ button:focus{
 body{
     font-family: 'MuseoSansCyrl', sans-serif;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 input:focus{
     outline: none;
@@ -65,6 +73,7 @@ a:hover{
 }
 .main{
     padding-top: 50px;
+    flex: 1;
 }
 .top{
     background: #fff;
@@ -412,7 +421,6 @@ a.callme {
         border-left: 1px solid #6bb434;
         border-right: 24px solid #77c23e;
         background: #77c23e url(../img/fish.png) no-repeat 15px 16px;
-        border-radius: 0 3px 3px 0;
         padding-left: 65px;
     }
 
@@ -2461,4 +2469,88 @@ a.callmefot:hover{
     .buytovar__wrap {
         height: 275px;
      }
+}
+
+.slider.no-slider{
+    height: auto;
+    background: url('../img/slider/slider2.png');
+    background-size: 100% 100%;
+}
+
+.slider.no-slider .navigation{
+    margin-bottom: 18px;
+
+}
+
+
+
+.notfound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    
+}
+.notfound img{
+    margin-right: 30px;
+}
+.notfound__wrap{
+    display: flex;
+}
+
+.notfound1{
+    font-size: 72px;
+    color: #b56dba;
+    font-family: 'PH';
+    font-weight: 600;
+}
+.notfound2{
+    font-size: 30px;
+    color: #77c23e;
+    font-family: 'PH';
+    font-weight: 600;
+    margin-top: 10px;
+}
+.notfound3{
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: 'PH';
+    font-weight: 600;
+}
+.notfound a{
+    width: 218px;
+    height: 41px;
+    background-color: #bfbfbf;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: 0.3s all;
+}
+
+.notfound a:hover{
+    background-color: #727272;
+}
+
+@media(max-width: 559px){
+    .notfound{
+        zoom: 0.6;
+    }
+    .notfound3{
+        font-size: 19px;
+    }
+    .notfound2{
+        font-size: 34px;
+    }
+}
+
+@media(max-width: 374px){
+    .notfound{
+        zoom: 0.5;
+    }
 }

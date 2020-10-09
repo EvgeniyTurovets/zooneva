@@ -1947,7 +1947,7 @@ a.callmefot:hover {
 @media (max-width: 1400px) {
   .footer {
     max-width: 1350px;
-    width: auto; } }
+    width: 100%; } }
 
 @media (max-width: 1199px) {
   .footer-block2 {
@@ -2298,4 +2298,4 @@ a.callmefot:hover {
   background-size: 100% 100%; }
 
 .slider.no-slider .navigation {
-  margin-bottom: 18px; }
+  margin-bottom: 85px; }

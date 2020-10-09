@@ -1,0 +1,117 @@
+.breadcrumb {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 20px 0; }
+
+.breadcrumb li {
+  font-size: 12px;
+  color: #afafaf;
+  color: #77c23e;
+  list-style: none;
+  margin-right: 15px; }
+
+.breadcrumb li a {
+  font-size: 12px;
+  color: #afafaf;
+  text-decoration: none;
+  transition: 0.2s all; }
+
+.breadcrumb li svg {
+  margin-right: 15px; }
+
+.breadcrumb li a:hover {
+  color: #4f4f4f;
+  text-decoration: underline; }
+
+.akcii h1 {
+  font-size: 25px;
+  color: #f9921c;
+  margin-bottom: 22px; }
+
+.akcii__baner {
+  background-size: cover;
+  padding: 13%;
+  display: block;
+  width: 100%;
+  transition: 0.3s all; }
+
+.akcii__baner:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5); }
+
+.data {
+  font-size: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.data svg {
+  margin-right: 10px;
+  margin-bottom: 2px; }
+
+.akcii__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -7px; }
+
+.akcii__item {
+  width: calc(100% / 3 - 14px);
+  margin: 0 7px;
+  padding: 15px;
+  border: 1px solid #e4e4e4;
+  margin-top: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.akcii__item__img {
+  background-size: cover;
+  padding: 21%;
+  display: block;
+  width: 100%;
+  transition: 0.3s all;
+  cursor: pointer; }
+
+.akcii__item__title {
+  font-size: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+  font-weight: 400;
+  display: inline-block; }
+
+.akcii__item__text {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5; }
+
+.akcii__item a:last-child {
+  color: #77c03d;
+  font-size: 15px;
+  transition: 0.3s all; }
+
+.akcii__item a:last-child:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px); }
+
+@media (max-width: 1024px) {
+  .akcii__item {
+    width: calc(100% / 2 - 14px); } }
+
+@media (max-width: 767px) {
+  .akcii__item__title {
+    font-size: 19px; } }
+
+@media (max-width: 559px) {
+  .akcii__item {
+    width: calc(100% - 14px); } }

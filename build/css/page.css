@@ -115,3 +115,118 @@
 @media (max-width: 559px) {
   .akcii__item {
     width: calc(100% - 14px); } }
+
+.page {
+  padding-top: 35px;
+  border-top: 1px solid #e9e9e9; }
+
+.text-content {
+  padding: 0 15px; }
+
+.text-content .data {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.text-content img {
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 30px; }
+
+.text-content p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 23px; }
+
+.clear {
+  float: right;
+  width: 100%; }
+
+.text-content h2 {
+  font-size: 25px;
+  width: 100%;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+.text-content ul {
+  padding-left: 0;
+  margin-bottom: 50px; }
+
+.text-content li {
+  list-style: none;
+  margin-bottom: 35px;
+  position: relative;
+  padding-left: 15px; }
+
+.text-content li:before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  display: inline-block;
+  background-color: #f9921c;
+  left: 0px;
+  top: 6px; }
+
+.text-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: relative;
+  margin-top: 50px; }
+
+.text-pagination a {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none; }
+
+.text-pagination__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid; }
+
+.text-pagination__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid; }
+
+.text-pagination__wrap a {
+  text-decoration: none; }
+
+.text-pagination__wrap a:first-child:after {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block; }
+
+@media (max-width: 1024px) {
+  .text-content img {
+    float: none;
+    max-width: 100%;
+    margin: 0; } }
+
+@media (max-width: 559px) {
+  .text-pagination {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .text-pagination .text-pagination__left {
+    position: relative;
+    left: 0;
+    width: 100%;
+    border-bottom: 0;
+    text-decoration: underline;
+    margin-bottom: 25px; }
+  .text-pagination__wrap {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .text-content {
+    padding: 0; } }
+
+@media (max-width: 374px) {
+  .text-pagination a {
+    font-size: 12px; } }

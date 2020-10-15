@@ -3324,14 +3324,10 @@ a.callme {
   -ms-flex-align: center;
       align-items: center;
   padding-top: 15px;
-  margin-left: 15px;
-  text-decoration: none; }
-
-.header__right__item:hover {
-  text-decoration: none; }
+  margin-left: 15px; }
 
 .header__right__item span {
-  height: 22px;
+  height: 23px;
   position: absolute;
   right: -10px;
   top: -5px;

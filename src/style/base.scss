@@ -74,6 +74,7 @@ a:hover{
 .main{
     padding-top: 50px;
     flex: 1;
+    overflow: hidden;
 }
 .top{
     background: #fff;
@@ -2434,6 +2435,13 @@ a.callmefot:hover{
     text-decoration: none;
     transition: 0.3s all;
 }
+.buytovar-btn.addtocart svg{ 
+    display: none;
+}
+.buytovar-btn.addtocart{
+    background-color: #f9921c!important;
+    text-decoration: underline;
+}
 
 .buytovar__btn .close-btn{
     background-color: #77c23e;
@@ -2476,6 +2484,13 @@ a.callmefot:hover{
 .slider.no-slider .navigation{
     margin-bottom: 85px;
 }
+@media(max-width: 559px){
+    .slider.no-slider{
+        padding-top: 0;
+    }
+}
 
 
-
+.contact .text-content{
+    padding-left: 0;
+}

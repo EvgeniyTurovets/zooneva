@@ -1,3 +1,6 @@
+@import 'libs/selectric.scss';
+@import 'libs/range.scss';
+@import 'catalog.scss';
 .breadcrumb{
 	display: flex;
 	flex-wrap: wrap;
@@ -446,4 +449,16 @@ textarea:focus{
 	#contact__form textarea{
 		margin-top: 0;
 	}
+}
+
+
+.dostavka__item{
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+
+.dostavka__text{
+	font-size: 15px;
+	margin-bottom: 40px;
+	line-height: 1.5;
 }

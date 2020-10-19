@@ -109,16 +109,14 @@ $(function(){
 
 	//фиксированое меню при скроле
 	let navigationWidth = $('.navigation').width();
-	console.log(navigationWidth);
+	
 	yes = $(".slider").offset().top + 18;
 	$(document).scroll(function () {
 		if($(window).width() > 1025){
 			s_top = $(window).scrollTop();
 		    if(s_top > yes){
 		        $('.navigation').addClass('fix-menu')
-		        console.log($('.navigation').offset());
 		        $('.header__right').addClass('fix-menu')
-		        
 		    }
 		    else{
 		    	$('.navigation').removeClass('fix-menu')
@@ -130,8 +128,48 @@ $(function(){
 
 
 	$('.buytovar-btn').click(function(){
-		event.preventDefault()
-
-		$('#buytovar').fadeIn()
+		if($(this).hasClass('addtocart') == 0){
+			event.preventDefault()
+			$(this).addClass('addtocart')
+			$(this).text('В корзине')
+			$('#buytovar').fadeIn()
+		}
+		
 	})
+
+	$('select').selectric()
+
+	$('.pokvse').click(function(){
+		$('.pokvse').hide()
+		$('.svernut').show()
+		$(this).parent().find('.tovar-sidebar__wrap').addClass('active')
+	})
+
+	$('.svernut').click(function(){
+		$('.svernut').hide()
+		$('.pokvse').show()
+		$(this).parent().find('.tovar-sidebar__wrap').removeClass('active')
+	})
+
+	$("#pricerange").ionRangeSlider({
+		type: "double",
+	})
+	
+	$('.mob-filter').click(function(){
+		$('.catalog-sidebar').toggleClass('active')
+	})
+	if($(window).width() < 1025){
+		$('.catalog-sidebar').mouseup(function (e){ // событие клика по веб-документу
+			var div = $(".sidebarnav"); // тут указываем ID элемента
+			if (!div.is(e.target) // если клик был не по нашему блоку
+			    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+				$('.catalog-sidebar').removeClass('active'); // скрываем его
+			}
+		});
+	}
+
+	$('.tovar-sidebar__title').click(function(){
+		$(this).parent('.tovar-sidebar').toggleClass('active')
+	})
+	
 })

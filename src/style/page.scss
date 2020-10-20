@@ -1,5 +1,6 @@
 @import 'libs/selectric.scss';
 @import 'libs/range.scss';
+@import 'libs/fancybox.scss';
 @import 'catalog.scss';
 .breadcrumb{
 	display: flex;
@@ -20,13 +21,32 @@
 	transition: 0.2s all;
 }
 .breadcrumb li svg{
-	margin-right: 15px;
+	margin-left: 15px;
 }
 .breadcrumb li a:hover{
 	color: #4f4f4f;
 	text-decoration: underline;
 }
-
+@media(max-width: 559px){
+	.breadcrumb li{
+		padding: 3px 10px;
+	    border-radius: 5px;
+	    background: #f9921c;
+	    margin-right: 5px;
+	    margin-bottom: 5px;
+	}
+	.breadcrumb li a{
+		color: #fff;
+		line-height: 18px;
+	}
+	.breadcrumb li:last-child{
+		background-color: #fff;
+		border: 1px solid #77c23e;
+	}
+	.breadcrumb li svg{
+		display: none;
+	}
+}
 .akcii h1{
 	font-size: 25px;
 	color: #f9921c;

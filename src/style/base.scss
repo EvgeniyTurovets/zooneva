@@ -74,7 +74,6 @@ a:hover{
 .main{
     padding-top: 50px;
     flex: 1;
-    overflow: hidden;
 }
 .top{
     background: #fff;
@@ -1229,10 +1228,12 @@ a.alltov {
     z-index: 999;
     display: none;
 }
-
-.sidebarnav li:hover .menu1 {
-    display: block;
+@media(min-width: 1025px){
+    .sidebarnav li:hover .menu1 {
+        display: block;
+    }
 }
+
 
 .sidebarnav li:hover .menu2 {
     display: block;
@@ -1415,6 +1416,7 @@ a.alltov {
    margin-top: 10px;
    margin-bottom: 5px;
    display: flex;
+   pointer-events: none;
   /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
   .rating-group {
     display: inline-flex;

@@ -29,6 +29,27 @@ $(function(){
 	    ]
 	})
 
+	$('.tovar__slider-g').slick({
+		fade: true,
+		arrows: false,
+		responsive: [
+	    {
+	      breakpoint: 560,
+	      settings: {
+	      	dots: true,
+	      }
+	    },
+	    ]
+	})
+
+	$('.slider-v').slick({
+		vertical: true,
+		verticalSwiping: true,
+		slidesToShow: 5,
+    	slidesToScroll: 1,
+    	asNavFor: '.tovar__slider-g',
+    	focusOnSelect: true
+	})
 	//поиск на мобильном
 	$('.search_mob').click(function(){
 		event.preventDefault();
@@ -171,5 +192,44 @@ $(function(){
 	$('.tovar-sidebar__title').click(function(){
 		$(this).parent('.tovar-sidebar').toggleClass('active')
 	})
+	
+
+	$('[data-fancybox="gallery"]').fancybox({
+		buttons: [
+		    "zoom",
+		    //"share",
+		    // "slideShow",
+		    //"fullScreen",
+		    //"download",
+		    "thumbs",
+		    "close"
+		  ],
+	});
+
+	$('.tovar__addwich').click(function(){
+		if($(this).hasClass('noadd')){
+			event.preventDefault()
+			$(this).removeClass('noadd')
+		}
+		
+	})
+
+	// Табы.
+	var tab = $('#tabs .tabs-items > div'); 
+	tab.hide().filter(':first').show(); 
+	
+	// Клики по вкладкам.
+	$('#tabs .tabs-nav a').click(function(){
+		tab.hide(); 
+		tab.filter(this.hash).show(); 
+		$('#tabs .tabs-nav a').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	}).filter(':first').click();
+ 
+	// Клики по якорным ссылкам.
+	$('.tabs-target').click(function(){
+		$('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
+	});
 	
 })

@@ -3107,8 +3107,7 @@ a:hover {
 .main {
   padding-top: 50px;
   -ms-flex: 1;
-      flex: 1;
-  overflow: hidden; }
+      flex: 1; }
 
 .top {
   background: #fff;
@@ -4156,8 +4155,9 @@ a.alltov {
   z-index: 999;
   display: none; }
 
-.sidebarnav li:hover .menu1 {
-  display: block; }
+@media (min-width: 1025px) {
+  .sidebarnav li:hover .menu1 {
+    display: block; } }
 
 .sidebarnav li:hover .menu2 {
   display: block; }
@@ -4328,6 +4328,7 @@ a.alltov {
   margin-bottom: 5px;
   display: -ms-flexbox;
   display: flex;
+  pointer-events: none;
   /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
   /* make hover effect work properly in IE */
   /* hide radio inputs */

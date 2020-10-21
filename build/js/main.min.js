@@ -37,6 +37,7 @@ $(function(){
 	      breakpoint: 560,
 	      settings: {
 	      	dots: true,
+	      	fade: false,
 	      }
 	    },
 	    ]

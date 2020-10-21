@@ -37,6 +37,7 @@ $(function(){
 	      breakpoint: 560,
 	      settings: {
 	      	dots: true,
+	      	fade: false,
 	      }
 	    },
 	    ]
@@ -49,6 +50,31 @@ $(function(){
     	slidesToScroll: 1,
     	asNavFor: '.tovar__slider-g',
     	focusOnSelect: true
+	})
+
+	$('.tab-1__slider__wrap').slick({
+		slidesToShow: 4,
+		responsive: [
+	    {
+	      breakpoint: 1200,
+	      settings: {
+	      	slidesToShow: 3,
+	      }
+	    },
+	    {
+	      breakpoint: 1025,
+	      settings: {
+	      	slidesToShow: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 768,
+	      settings: {
+	      	slidesToShow: 1,
+	      }
+	    },
+
+	    ]
 	})
 	//поиск на мобильном
 	$('.search_mob').click(function(){

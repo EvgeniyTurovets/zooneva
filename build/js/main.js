@@ -232,4 +232,26 @@ $(function(){
 		$('#tabs .tabs-nav a[href=' + $(this).data('id')+ ']').click();
 	});
 	
+
+	$('.tabs-form .select').selectric({
+		onChange: function() {
+			$('.tabs-form__rate label').eq($('.tabs-form .selectric span').text() - 1).click()
+		    // alert($('.tabs-form .selectric span').text())
+		  },
+	})	
+
+	$('.tabs-form__rate label').click(function(){
+		let labelIndex = $(this).attr('for')
+		let selectIndex = $('#'+labelIndex+'').index() / 2 - 1
+		$('.tabs-form .select').prop('selectedIndex', selectIndex).selectric('refresh');
+	})
+	 
+	
+	$('.otziv-btn').click(function(){
+		$('html, body').animate({
+		    scrollTop: $('.tabs-form').offset().top - 100
+		}, 500, 'linear');
+	})
+	
+	
 })

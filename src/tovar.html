@@ -377,10 +377,72 @@
                             Вы посмотрели 24 из 146 товаров
                         </div>
                     </div>
+
+                    <form class="tabs-form">
+                        <div class="tabs-form__name">Заполните форму чтобы оставить отзыв:</div>
+                        <div class="tabs-form__wrap">
+                            <input type="" name="" placeholder="Введите Ваше Имя*">
+                            <input type="" name="" placeholder="Введите Ваш E-mail*">
+                        </div>
+                        <div class="tabs-form__ozenka">
+                            <div class="tabs-form__text">Оцените наш магазин по шкале <br>
+                            от 1 до 5, где 5 наивысшая оценка.</div>
+                            <div class="tabs-form__rate">
+                                <div class="full-stars-example-two">
+                                    <div class="rating-group">
+                                        <input disabled="" checked="" class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+
+                                        <label aria-label="1 star" class="rating__label" for="rating3-11"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-11" value="1" type="radio">
+
+                                        <label aria-label="2 stars" class="rating__label" for="rating3-22"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-22" value="2" type="radio">
+
+                                        <label aria-label="3 stars" class="rating__label" for="rating3-33"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-33" value="3" type="radio">
+
+                                        <label aria-label="4 stars" class="rating__label" for="rating3-44"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-44" value="4" type="radio" >
+
+                                        <label aria-label="5 stars" class="rating__label" for="rating3-55"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                        <input class="rating__input" name="rating3" id="rating3-55" value="5" type="radio" checked="">
+                                    </div>        
+                                </div>
+                            </div>
+                            <select class="select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option selected>5</option>
+                            </select>
+                        </div>
+                        <textarea placeholder="Ваш отзыв*"></textarea>
+                        <button class="modal-btn" data-modal="otziv-form">Отправить отзыв</button>
+                    </form>
                 </div>
             </div>      
         </div>
     </div> 
+</div>
+
+<div class="modal" id="otziv-form">
+  <div class="modal__wrap__back modal-body" style="height: 300px">
+    <div class="modal-submite" style="display: block; height: 300px;">
+      <div class="modal-close close-btn"><i class="fas fa-times-circle"></i></div>
+      <div class="modal-submite_wrap">
+        <span><i class="fas fa-check"></i>
+          СПАСИБО!
+        </span>
+        <br>
+        <div style="font-size: 14px;">
+          Ваш отзыв будет опубликован <br>
+          в ближайшее время<br>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </div>
 
 <div class="modal" id="buyonclick">

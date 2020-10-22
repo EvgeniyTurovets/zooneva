@@ -279,5 +279,7 @@ $(function(){
 		}, 500, 'linear');
 	})
 	
-	
+	$('.enciclope__mob-btn').click(function(){
+		$('.enciclope-filter form').slideToggle(200)
+	})
 })

@@ -579,3 +579,56 @@ textarea:focus{
 .enciclope__wrap .selectric-wrapper{
 	width: 100%;
 }
+
+.enciclope__wrap .tovar-sidebar.price-bar{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.enciclope__wrap .tovar-sidebar .sbross-btn{
+	color: #77c03d;
+}
+.enciclope__wrap .tovar-sidebar button{
+	margin-top: 15px;
+}
+
+@media(max-width: 1024px){
+	.enciclope-filter{
+		padding-right: 0;
+	}
+	.enciclope__wrap{
+		flex-direction: column;
+		.akcii__item__img {
+			padding: auto;
+			height: 200px;
+			background-size: cover;
+			margin-bottom: 10px;
+			background-position: center;
+		}
+		.selectric-wrapper{
+			max-width: 400px;
+		}
+		.tovar-sidebar__wrap{
+			max-height: initial;
+		}
+	}
+	.enciclope__mob-btn{
+		display: block;
+		width: 100%;
+		color: #fff;
+		color: #fff !important;
+		background: #77c23e;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 700;
+		margin: 20px 0 0 0;
+		border-radius: 5px;
+		outline: none;
+		padding: 15px 0;
+		text-align: center;
+		border: 0;
+	}
+	.enciclope-filter form{
+		display: none;
+	}
+}

@@ -1629,8 +1629,11 @@ body.compensate-for-scrollbar {
 
 .catalog {
   display: -ms-flexbox;
-  display: flex;
-  overflow: hidden; }
+  display: flex; }
+
+@media (max-width: 559px) {
+  .catalog {
+    overflow: hidden; } }
 
 .tovars .breadcrumb {
   margin-top: 0; }
@@ -1790,7 +1793,7 @@ body.compensate-for-scrollbar {
 .selectric {
   background-color: #fff;
   border: 1px solid #e4e4e4;
-  border-right: 0; }
+  border-radius: 2px; }
 
 .selectric .label {
   font-size: 14px; }
@@ -3074,7 +3077,9 @@ body.compensate-for-scrollbar {
       flex-direction: column; }
 
 .akcii__item__img {
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 21%;
   display: block;
   width: 100%;
@@ -3118,7 +3123,9 @@ body.compensate-for-scrollbar {
 
 @media (max-width: 559px) {
   .akcii__item {
-    width: calc(100% - 14px); } }
+    width: calc(100% - 14px); }
+  .akcii__item__img {
+    background-size: cover; } }
 
 .page {
   padding-top: 35px;
@@ -3479,9 +3486,8 @@ textarea:focus {
     -ms-flex-direction: row;
         flex-direction: row; }
     .akcii__item.big .akcii__item__img {
-      -ms-flex: 0 0 367px;
-          flex: 0 0 367px;
-      padding: 15%; }
+      padding: 2%;
+      min-width: 325px; }
     .akcii__item.big .akcii__item__wrap {
       padding-left: 15px;
       display: -ms-flexbox;
@@ -3495,3 +3501,63 @@ textarea:focus {
       display: block;
       -ms-flex: 1;
           flex: 1; } }
+
+.text-content h3 {
+  font-size: 25px; }
+
+.enciclope .text-content {
+  padding: 0; }
+
+.sort {
+  margin-top: 45px;
+  margin-bottom: 25px; }
+
+.sort .tovar-sidebar__wrap {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: initial; }
+
+.sort .tovar-sidebar__wrap label {
+  margin-right: 10px;
+  font-style: 12px;
+  padding-top: 2px;
+  margin-bottom: 20px; }
+
+.sort .tovar-sidebar__wrap input:checked + label:after {
+  top: 2px; }
+
+.sort .tovar-sidebar__wrap label:before {
+  border-radius: 2px; }
+
+.enciclope__wrap {
+  display: -ms-flexbox;
+  display: flex; }
+
+.enciclope__mob-btn {
+  display: none; }
+
+.enciclope-filter {
+  min-width: 255px;
+  padding-right: 15px; }
+
+.enciclope__wrap .akcii__item.big .akcii__item__img {
+  background-position: top; }
+
+.enciclope__wrap .akcii__item__title {
+  margin-top: 0; }
+
+.enciclope-filter form {
+  box-shadow: 0 0 7px #AFAFAF;
+  padding: 10px 15px 30px 15px;
+  margin: 17px 0 30px 0; }
+
+.enciclope__title {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.enciclope__wrap .selectric-wrapper {
+  width: 100%; }

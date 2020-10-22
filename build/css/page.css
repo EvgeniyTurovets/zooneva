@@ -3584,7 +3584,6 @@ textarea:focus {
         flex-direction: column; }
     .enciclope__wrap .akcii__item__img {
       padding: auto;
-      height: 200px;
       background-size: cover;
       margin-bottom: 10px;
       background-position: center; }
@@ -3609,3 +3608,17 @@ textarea:focus {
     border: 0; }
   .enciclope-filter form {
     display: none; } }
+
+.akcii__item.big .akcii__item__img {
+  padding: 0; }
+
+.akcii__item.big .akcii__item__img img {
+  width: 100%;
+  object-fit: contain; }
+
+.tovars.proizv {
+  padding-left: 0;
+  margin-top: 75px; }
+
+.tovars.proizv h2:after {
+  width: 100%; }

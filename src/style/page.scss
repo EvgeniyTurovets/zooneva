@@ -675,14 +675,14 @@ textarea:focus{
 	box-shadow: 0 0 5px rgba(0,0,0, 0.5) inset;
 }
 .fizlic thead tr{
-	border-bottom: 1px solid #e7ebee;
-	border-top: 1px solid #e7ebee;
+	border-bottom: 2px solid #e7ebee;
+	border-top: 2px solid #e7ebee;
 	height: 60px;
 }
 
 .fizlic td {
 	padding: 0 20px;
-	border-right: 1px solid #e7ebe7;
+	border-right: 2px solid #e7ebe7;
 }
 .fizlic td:last-child{
 	border-right: 0;
@@ -701,7 +701,7 @@ textarea:focus{
 	border-radius: 5px;
 }
 .fizlic-br{
-	border-bottom: 1px solid #e7ebe7;
+	border-bottom: 2px solid #e7ebe7;
 }
 .fizlic__tovari{
 	display: flex;	

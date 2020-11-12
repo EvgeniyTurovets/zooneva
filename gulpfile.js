@@ -113,7 +113,7 @@ gulp.task('js:build', function () {
         .pipe(rigger())                             // импортируем все указанные файлы в main.js
         .pipe(gulp.dest(path.build.js))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(uglify())                             // минимизируем js
+        // .pipe(uglify())                             // минимизируем js
         .pipe(gulp.dest(path.build.js))             // положим готовый файл
         .pipe(webserver.reload({ stream: true }));  // перезагрузим сервер
 });

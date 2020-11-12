@@ -17,10 +17,24 @@ $(function(){
 
 	$('.slider_priyt').slick({
  		slidesToScroll: 1,
- 		variableWidth: true,
+ 		slidesToShow: 4,
  		responsive: [
+ 		{
+	      breakpoint: 1024,
+	      settings: {
+	       variableWidth: false,
+	       slidesToShow: 3,
+	      }
+	    },
 	    {
 	      breakpoint: 767,
+	      settings: {
+	       variableWidth: false,
+	       slidesToShow: 2,
+	      }
+	    },
+	    {
+	      breakpoint: 424,
 	      settings: {
 	       variableWidth: false,
 	       slidesToShow: 1,

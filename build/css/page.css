@@ -2145,6 +2145,17 @@ body.compensate-for-scrollbar {
   border-radius: 5px;
   position: relative; }
 
+.tovar__top__left:after {
+  content: "";
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  left: 5%;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  height: 5px;
+  border-radius: 5px; }
+
 .slider-g__item {
   width: 100%;
   height: 340px;
@@ -3648,13 +3659,13 @@ textarea:focus {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset; }
 
 .fizlic thead tr {
-  border-bottom: 1px solid #e7ebee;
-  border-top: 1px solid #e7ebee;
+  border-bottom: 2px solid #e7ebee;
+  border-top: 2px solid #e7ebee;
   height: 60px; }
 
 .fizlic td {
   padding: 0 20px;
-  border-right: 1px solid #e7ebe7; }
+  border-right: 2px solid #e7ebe7; }
 
 .fizlic td:last-child {
   border-right: 0; }
@@ -3673,7 +3684,7 @@ textarea:focus {
   border-radius: 5px; }
 
 .fizlic-br {
-  border-bottom: 1px solid #e7ebe7; }
+  border-bottom: 2px solid #e7ebe7; }
 
 .fizlic__tovari {
   display: -ms-flexbox;
